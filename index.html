@@ -250,7 +250,6 @@
                     <a href="" class="social-list-link">
                       <svg class="social-list-icon" width="20" height="20">
                         <use href="./img/sprite.svg#linkedin"></use>
-                        width="20" height="20"
                       </svg>
                     </a>
                   </li>
@@ -482,17 +481,19 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <input
-            class="contact-form-checkbox visually-hidden"
-            type="checkbox"
-            id="checkbox-policy"
-            name="user-policy"
-            required
-          />
-          <label class="contact-form-checkbox-label" for="checkbox-policy"
-            >Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a class="contact-form-checkbox-link" href="">Условия договора</a>
-          </label>
+          <div class="contact-form-checkbox-wrapper">
+            <input
+              class="contact-form-checkbox visually-hidden"
+              type="checkbox"
+              id="checkbox-policy"
+              name="user-policy"
+              required
+            />
+            <label class="contact-form-checkbox-label" for="checkbox-policy"
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a class="contact-form-checkbox-link" href="">Условия договора</a>
+            </label>
+          </div>
           <button class="contact-form-button" type="submit">Отправить</button>
         </form>
       </div>
